@@ -4,11 +4,14 @@ import './App.css';
 import Login from './Components/Login/Login';
 import { Routes, Route, Link } from "react-router-dom";
 import SignUp from './Components/SignUp/SignUp';
+import Landing from './Components/Landing/Landing';
 
 function App() {
   return (
-    <div className='mainContainer'> 
+    <div className='mainContainer font-poppins'> 
          <Routes>
+     
+            <Route path="/" element={<Landing />}/>
             <Route path="/login" element={<Login />}/>
             <Route path="/welcome" element={<SignUp />} />
         
